@@ -1,0 +1,9 @@
+.app {
+  min-height: 100vh;
+  background: #18181b;
+  color: #f3f4f6;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}

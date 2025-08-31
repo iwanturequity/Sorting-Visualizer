@@ -1,0 +1,46 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #23232a;
+  padding: 1rem 2rem;
+  box-shadow: 0 2px 8px #000a;
+}
+.left, .center, .right {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.button {
+  background: #3b82f6;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1.2rem;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.button:hover:not(:disabled) {
+  background: #2563eb;
+}
+.button:disabled {
+  background: #6b7280;
+  cursor: not-allowed;
+}
+.stopButton {
+  background: #ef4444 !important;
+}
+.stopButton:hover:not(:disabled) {
+  background: #dc2626 !important;
+}
+.slider {
+  margin: 0 0.5rem;
+}
+label {
+  color: #f3f4f6;
+  font-size: 0.95rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

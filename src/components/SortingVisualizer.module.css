@@ -1,0 +1,56 @@
+.visualizer {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  height: 70vh;
+  width: 100vw;
+  margin: 1rem auto;
+  background: #18181b;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 24px #0005;
+  padding: 1rem;
+  padding-top: 40px;
+}
+
+.barContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 1px;
+  height: 100%;
+  justify-content: flex-end;
+  position: relative;
+}
+
+.valueLabel {
+  color: #f3f4f6;
+  font-size: 12px;
+  font-weight: bold;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+  z-index: 10;
+  background: rgba(24, 24, 27, 0.8);
+  padding: 2px 6px;
+  border-radius: 3px;
+  transition: bottom 0.2s ease;
+  backdrop-filter: blur(4px);
+}
+
+.bar {
+  background: #6366f1;
+  border-radius: 2px 2px 0 0;
+  transition: height 0.2s, background 0.2s;
+  width: 100%;
+  min-width: 20px;
+}
+
+.bar.comparing {
+  background: #6366f1 !important;
+}
+
+.bar.swapping {
+  background: #6366f1 !important;
+}
